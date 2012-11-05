@@ -1,0 +1,2 @@
+recursive-include dojoforms/static *.*
+global-exclude *.pyc
