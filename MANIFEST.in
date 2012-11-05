@@ -1,2 +1,2 @@
-recursive-include dojoforms/static *.*
-global-exclude *.pyc
+recursive-include dojoforms/static *
+global-exclude *.pyc .git*
