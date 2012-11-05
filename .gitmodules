@@ -1,0 +1,12 @@
+[submodule "dojoforms/static/js/dojo/dojo"]
+	path = dojoforms/static/js/dojo/dojo
+	url = https://github.com/dojo/dojo.git
+[submodule "dojoforms/static/js/dojo/dijit"]
+	path = dojoforms/static/js/dojo/dijit
+	url = https://github.com/dojo/dijit.git
+[submodule "dojoforms/static/js/dojo/dojox"]
+	path = dojoforms/static/js/dojo/dojox
+	url = https://github.com/dojo/dojox.git
+[submodule "dojoforms/static/js/dojo/util"]
+	path = dojoforms/static/js/dojo/util
+	url = https://github.com/dojo/util.git
