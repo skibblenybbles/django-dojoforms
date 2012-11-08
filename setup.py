@@ -12,7 +12,8 @@ setup(
     license="BSD License",
     platforms=["OS Independent"],
     install_requires=[
-        "Django>=1.4"
+        "Django>=1.4",
+        "django-dojo=0.0.1",
     ],
     packages=find_packages(exclude=["example", "example.*"]),
     include_package_data=True,

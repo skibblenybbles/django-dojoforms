@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7" dir="ltr" lang="en-US"> <![endif]-->
+<!--[if IE 7]>    <html class="lt-ie9 lt-ie8" dir="ltr" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="lt-ie9" dir="ltr" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!--> <html dir="ltr" lang="en-US"> <!--<![endif]-->    
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block full_title %}{% block title %}Welcome{% endblock %} :: django-dojoforms{% endblock %}</title>
+        
+        <link rel="stylesheet" href="{{ STATIC_URL }}css/styles.css" media="all" />
+        
+        {# configure and load Dojo #}
+        <script>
+        window.dojoConfig = {
+            async: true,
+            parseOnLoad: false,
+            baseUrl: "{{ STATIC_URL }}js",
+            packages: [
+                {
+                    name: "dojo",
+                    location: {% if config.production %}"./prod/dojo"{% else %}"./dojo/dojo"{% endif %}
+                },
+                {
+                    name: "skins",
+                    location: {% if config.production %}"./prod/skins"{% else %}"./skins"{% endif %}
+                }
+            ]
+        };
+        </script>
+        
+    </head>
+    <body>
+    {% block body_inner %}
+    
+    {% endblock body_inner %}
+    </body>
+</html>

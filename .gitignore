@@ -3,6 +3,7 @@ dist
 example/example/settings/local.py
 example/example/static
 *.pyc
+*.sqlite3
 *.egg-info
 *.tmproj
 
